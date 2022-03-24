@@ -1,0 +1,16 @@
+.idea
+.git
+.iml
+.ipr
+.iws
+.git/**/*
+.dockerignore/**/*
+build
+build/**/*
+*/build
+*/out
+*/target
+target
+dockerfile
+dockerfile.*
+docker-compose.yml

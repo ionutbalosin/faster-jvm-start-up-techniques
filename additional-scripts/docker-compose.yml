@@ -1,0 +1,14 @@
+version: "2.2"
+
+services:
+  spring-petclinic-svc:
+    container_name: spring-petclinic-svc-local
+    image: openjdk:jdk17-spring-petclinic
+    mem_limit: 1536m
+    mem_reservation: 1024M
+    cpus: 4
+    ports:
+      - 8080:8080
+      - 5005:5005
+    environment:
+      - "JAVA_OPTS=-Dcom.sun.management.jmxremote.rmi.port=1444 -Dcom.sun.management.jmxremote=true -Dcom.sun.management.jmxremote.port=1444 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.local.only=false -agentlib:jdwp=transport=dt_socket,address=5005,server=y,suspend=n"

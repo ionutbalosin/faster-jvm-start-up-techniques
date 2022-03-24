@@ -1,0 +1,15 @@
+FROM openjdk:17 AS build
+
+# copy and build all files
+COPY . /usr/src/app/
+RUN cd /usr/src/app/ && ./mvnw package -DskipTests
+
+FROM openjdk:17 AS target
+
+EXPOSE 8080
+WORKDIR /deployments/spring-petclinic
+
+COPY --from=build /usr/src/app/target/. ./
+COPY --from=build /usr/src/app/*.jsa ./
+
+ENTRYPOINT ["java","-Xlog:cds","-XX:SharedArchiveFile=dynamic-cds.jsa","-jar","./spring-petclinic-2.6.0-SNAPSHOT.jar"]
