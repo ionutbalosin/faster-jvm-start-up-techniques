@@ -13,7 +13,7 @@ cd spring-native/
 ```
 ./build.sh
 ```
-**Note:** Building might take significant amount of time
+**Note:** Building might take a significant amount of time
 
 ## Check the start-up times with AOT
 

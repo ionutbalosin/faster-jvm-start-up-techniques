@@ -2,12 +2,12 @@
 
 Techniques about how to improve the JVM start-up time for any application running on the JVM.
 
-Please use this tutorial in conjunction with my presentation slides [to-be-defined](https://ionutbalosin.com/talks)
+Please use this tutorial in conjunction with my presentation slides [Techniques for a faster JVM start-up](https://ionutbalosin.com/talks)
 
 
->Please visit my [web site](https://ionutbalosin.com/) if you are interested into further performance or software architecture related articles.
+>Please visit my [web site](https://ionutbalosin.com/) if you are interested in further performance or software architecture-related articles.
 
->Please check my [training catalog](https://ionutbalosin.com/training) if you are interested into specialized training for your company.
+>Please check my [training catalog](https://ionutbalosin.com/training) if you are interested in specialized training for your company.
 
 
 ## Content
@@ -44,7 +44,7 @@ cp ./additional-scripts/time-to-first-response.sh ./spring-native/samples/petcli
 
 ## Disable Address Space Layout Randomization (ASLR)
 
-For comparable results (especially in case of AppCDS), please make sure [ASLR](https://en.wikipedia.org/wiki/Address_space_layout_randomization) is disabled. 
+For comparable results (especially in the case of App/Dynamic CDS), please make sure [ASLR](https://en.wikipedia.org/wiki/Address_space_layout_randomization) is disabled. 
 For further details check [JEP 310: Application Class-Data Sharing](https://openjdk.java.net/jeps/310)
 
 ```
@@ -55,7 +55,7 @@ sudo sh -c "echo 0 > /proc/sys/kernel/randomize_va_space"
 
 ### Resident Set Size (RSS) / Proportional Set Size (PSS)
 
-When multiple JVM instances are running on the same host and the archives are shared, the overall memory is implicitly reduced. In order to measure it I recommend looking at the [RSS](https://en.wikipedia.org/wiki/Resident_set_size) and [PSS](https://en.wikipedia.org/wiki/Proportional_set_size) of each process by using the [pmap](https://www.labcorner.de/cheat-sheet-understanding-the-pmap1-output/) command (known to provide the most accurate information) .
+When multiple JVM instances are running on the same host and the archives are shared, the overall memory is implicitly reduced. To measure it I recommend looking at the [RSS](https://en.wikipedia.org/wiki/Resident_set_size) and [PSS](https://en.wikipedia.org/wiki/Proportional_set_size) of each process by using the [pmap](https://www.labcorner.de/cheat-sheet-understanding-the-pmap1-output/) command (known to provide the most accurate information) .
 
 Assuming there are 2 running processes and PIDs were incrementally assigned
 

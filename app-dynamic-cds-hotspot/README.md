@@ -106,7 +106,7 @@ Make sure there is no other instance running
 pkill -f 'petclinic'
 ```
 
-Start few instances with static base CDS
+Start a few instances with static base CDS
 
 ```
 java -jar -Dserver.port=8080 target/*.jar 1>/dev/null & ./time-to-first-response.sh 8080
@@ -115,7 +115,7 @@ java -jar -Dserver.port=8080 target/*.jar 1>/dev/null & ./time-to-first-response
 java -jar -Dserver.port=8081 target/*.jar 1>/dev/null & ./time-to-first-response.sh 8081
 ```
 
-Start few instances with dynamic CDS
+Start a few instances with dynamic CDS
 
 ```
 java -XX:SharedArchiveFile=dynamic-cds.jsa -jar -Dserver.port=8082 target/*.jar 1>/dev/null & ./time-to-first-response.sh 8082
