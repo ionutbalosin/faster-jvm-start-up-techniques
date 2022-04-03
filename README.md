@@ -1,4 +1,4 @@
-# Faster JMV Start-up Techniques
+# Faster JVM Start-up Techniques
 
 Techniques about how to improve the JVM start-up time for any application running on the JVM.
 
