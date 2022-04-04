@@ -2,12 +2,12 @@
 
 Techniques about how to improve the JVM start-up time for any application running on the JVM.
 
-Please use this tutorial in conjunction with my presentation slides [Techniques for a faster JVM start-up](https://ionutbalosin.com/talks)
+Please use this tutorial in conjunction with my article [Application / Dynamic Class Data Sharing In HotSpot JVM](https://ionutbalosin.com/2022/04/application-dynamic-class-data-sharing-in-hotspot-jvm/) and my presentation slides [Techniques for a faster JVM start-up](https://ionutbalosin.com/talks).
 
 
->Please visit my [web site](https://ionutbalosin.com/) if you are interested in further performance or software architecture-related articles.
+>Visit my [web site](https://ionutbalosin.com/) if you are interested in further performance or software architecture-related articles.
 
->Please check my [training catalog](https://ionutbalosin.com/training) if you are interested in specialized training for your company.
+>Check my [training catalog](https://ionutbalosin.com/training) if you are interested in specialized training for your company.
 
 
 ## Content

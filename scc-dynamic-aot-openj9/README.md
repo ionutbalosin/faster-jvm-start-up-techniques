@@ -20,7 +20,7 @@ cd spring-petclinic/
 java -Xshareclasses:name=scc,cacheDir=. -Xscmx96m -XX:SharedCacheHardLimit=192m -Xquickstart -jar -Dserver.port=8080 target/*.jar
 ```
 
-**Note:** When "-Xquickstart" mode is enabled all methods are dynamically AOT compiled (supposing that AOT compiler is active as well). This option is recommended when start-up time is an important performance metric.
+**Note:** When "-Xquickstart" mode is enabled all methods are dynamically AOT compiled (supposing that AOT compiler is active as well). This option is recommended when start-up time is an important performance metric
 
 These command-line options are further detailed below: 
 - [-Xshareclasses](https://www.eclipse.org/openj9/docs/xshareclasses)

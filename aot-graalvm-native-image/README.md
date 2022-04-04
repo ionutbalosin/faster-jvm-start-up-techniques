@@ -1,6 +1,6 @@
 # Ahead-of-Time (AOT) with GraalVM native-image
 
-The demo is based on [spring-native](https://github.com/spring-projects-experimental/spring-native) project.
+The demo is based on [spring-native](https://github.com/spring-projects-experimental/spring-native) project
 
 >Make sure the [GraalVM native-image](https://www.graalvm.org/downloads/) is properly configured
 
