@@ -69,7 +69,7 @@ Once the application properly starts, call the existing endpoints at [localhost:
 Start the application and specify the name of the dynamic CDS archive as argument
 
 ```
-java -XX:SharedArchiveFile=dynamic-cds.jsa -jar -Dserver.port=8080 target/*.jar
+java -Xlog:cds -XX:SharedArchiveFile=dynamic-cds.jsa -jar -Dserver.port=8080 target/*.jar
 ```
 
 ### Enable CDS and class load logging for further analysis

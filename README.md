@@ -14,7 +14,7 @@ Please use this tutorial in conjunction with my article [Application / Dynamic C
 #### [App/Dynamic Class Data Sharing (CDS) in HotSpot JVM](app-dynamic-cds-hotspot/README.md)
 #### [Shared Classes Cache (SCC) and Dynamic Ahead-of-Time (AOT) in Eclipse OpenJ9 JVM](scc-dynamic-aot-openj9/README.md)
 #### [Ahead-of-Time (AOT) with GraalVM native-image](aot-graalvm-native-image/README.md)
-#### [App/Dynamic Class Data Sharing (CDS) with Docker](docker/README.md)
+#### [App/Dynamic Class Data Sharing (CDS) with Docker - WIP](docker/README.md)
 
 ## Projects in scope
 
